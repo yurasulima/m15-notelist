@@ -31,24 +31,26 @@ public class NoteService {
                 return;
             }
         }
+        throw new RuntimeException();
     }
 
     public void update(Note note) {
         for (int i = 0; i < notes.size(); i++) {
             if (notes.get(i).getId() == note.getId()) {
                 notes.set(i, note);
+                return;
             }
         }
+        throw new RuntimeException();
     }
 
     public Note getById(long id) {
-
         for (Note note : notes) {
             if (note.getId() == id) {
                 return note;
             }
         }
-        return null;
+        throw new RuntimeException();
     }
 
 }

@@ -1,6 +1,6 @@
-package com.ys.notes.dao;
+package com.ys.notes.services;
 
-import com.ys.notes.dao.model.Note;
+import com.ys.notes.models.Note;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;

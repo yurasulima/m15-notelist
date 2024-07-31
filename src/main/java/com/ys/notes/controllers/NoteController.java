@@ -1,7 +1,7 @@
 package com.ys.notes.controllers;
 
-import com.ys.notes.dao.NoteService;
-import com.ys.notes.dao.model.Note;
+import com.ys.notes.services.NoteService;
+import com.ys.notes.models.Note;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.ys.notes.dao.model;
+package com.ys.notes.models;
 
 import lombok.Data;
 

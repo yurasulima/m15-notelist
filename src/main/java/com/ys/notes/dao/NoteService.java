@@ -2,7 +2,6 @@ package com.ys.notes.dao;
 
 import com.ys.notes.dao.model.Note;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,8 +10,6 @@ import java.util.List;
 public class NoteService {
 
     private final List<Note> notes = new ArrayList<>();
-
-
     public List<Note> listAll() {
         return notes;
     }
@@ -31,7 +28,7 @@ public class NoteService {
                 return;
             }
         }
-        throw new RuntimeException();
+        throw new IllegalArgumentException();
     }
 
     public void update(Note note) {
@@ -41,7 +38,7 @@ public class NoteService {
                 return;
             }
         }
-        throw new RuntimeException();
+        throw new IllegalArgumentException();
     }
 
     public Note getById(long id) {
@@ -50,7 +47,7 @@ public class NoteService {
                 return note;
             }
         }
-        throw new RuntimeException();
+        throw new IllegalArgumentException();
     }
 
 }
